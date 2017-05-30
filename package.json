@@ -7,11 +7,11 @@
   },
   "main": "src/index.js",
   "scripts": {
-    "start": "node lib/index.js",
+    "start": "node app/lib/index.js",
     "server": "nodemon src/index.js --exec babel-node",
     "test": "mocha --compilers js:babel-register",
     "lint": "eslint .",
-    "build": "babel src -d lib",
+    "build": "babel src -d app/lib",
     "prepublish": "npm run build"
   },
   "keywords": [
