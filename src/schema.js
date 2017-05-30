@@ -1,3 +1,4 @@
+import "babel-polyfill"
 import {
   GraphQLSchema,
   GraphQLObjectType,
@@ -55,7 +56,11 @@ const QueryType = new GraphQLObjectType({
   fields: () => ({
     allFighters: {
       type: new GraphQLList(FighterType),
-      resolve: fetchFighters
+      resolve: async () => {
+    		const resp = await fetch('http://ufc-data-api.ufc.com/api/v3/iphone/fighters/');
+    		const data = await resp.json();
+    		return data;
+  	  }
     }
   })
 })
