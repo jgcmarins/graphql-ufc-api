@@ -1,14 +1,14 @@
 import "babel-polyfill"
-import express from 'express'
-import graphQLHTTP from 'express-graphql'
+import Koa from 'koa'
+import graphqlHttp from 'koa-graphql'
 
-import schema from './schema'
+import { schema } from './schema'
 
 const PORT = process.env.PORT || 5000
 
-var app = express()
+var app = new Koa()
 
-app.use(graphQLHTTP({
+app.use(graphqlHttp({
   schema,
   graphiql: true
 }))
