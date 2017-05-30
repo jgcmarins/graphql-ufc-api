@@ -7,7 +7,7 @@
   },
   "main": "src/index.js",
   "scripts": {
-    "start": "node app/lib/index.js",
+    "start": "node lib/index.js",
     "server": "nodemon src/index.js --exec babel-node",
     "test": "mocha --compilers js:babel-register",
     "lint": "eslint .",
