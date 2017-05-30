@@ -1,8 +1,0 @@
-{
-  "name": "GraphQL UFC API",
-  "description": "GraphQL server for UFC's public API",
-  "repository": "https://github.com/jgcmarins/graphql-ufc-api.git",
-  "logo": "https://cdn.rawgit.com/heroku/node-js-getting-started/master/public/node.svg",
-  "keywords": ["node", "express", "heroku"],
-  "image": "heroku/nodejs"
-}

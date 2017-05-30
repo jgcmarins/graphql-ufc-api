@@ -12,10 +12,6 @@ app.use(graphQLHTTP({
   graphiql: true
 }))
 
-app.get('/', (request, response) => {
-  response.return(graphQLHTTP({ schema, graphiql: true }))
-})
-
 app.listen(PORT, () => {
   console.log('Server listening at port ' + PORT)
 })
