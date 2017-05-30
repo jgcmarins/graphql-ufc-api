@@ -1,4 +1,3 @@
-import "babel-polyfill"
 import {
   GraphQLSchema,
   GraphQLObjectType,
@@ -9,15 +8,6 @@ import {
 
 import fetch from 'node-fetch'
 
-const BASE_URL = 'http://ufc-data-api.ufc.com/api/v3/iphone'
-
-function fetchResponseByURL(relativeURL) {
-  return fetch(`${BASE_URL}${relativeURL}`).then(res => res.json())
-}
-
-function fetchFighters() {
-  return fetchResponseByURL('/fighters/').then(json => json)
-}
 
 const FighterType = new GraphQLObjectType({
   name: 'Fighter',
