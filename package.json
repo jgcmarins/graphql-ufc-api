@@ -8,7 +8,8 @@
     "server": "nodemon src/index.js --exec babel-node",
     "test": "mocha --compilers js:babel-register",
     "build": "babel src -d lib",
-    "prepublish": "npm run build"
+    "prepublish": "npm run build",
+    "update-schema": "babel-node ./scripts/updateSchema.js"
   },
   "keywords": [
     "graphql",
