@@ -8,7 +8,6 @@ import {
 
 import fetch from 'node-fetch'
 
-
 const FighterType = new GraphQLObjectType({
   name: 'Fighter',
   fields: () => ({
