@@ -5,7 +5,7 @@ GraphQL server for UFC's public API.
 The data is fetched from UFC's public API: [http://ufc-data-api.ufc.com/api/v3/iphone/fighters/](http://ufc-data-api.ufc.com/api/v3/iphone/fighters/).
 
 ## Try it
-Live demo [here](https://graphql-ufc-api-flvffltfrd.now.sh/).
+Live demo [here](https://graphql-ufc-api.now.sh/).
 
 ## Installation
 ```
