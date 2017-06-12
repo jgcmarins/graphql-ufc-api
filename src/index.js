@@ -4,7 +4,7 @@ import graphqlHttp from 'koa-graphql'
 
 import { schema } from './schema'
 
-const PORT = process.env.PORT || 8080
+const PORT = process.env.PORT || 5000
 
 var app = new Koa()
 
