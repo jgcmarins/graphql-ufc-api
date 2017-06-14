@@ -1,6 +1,7 @@
 import "babel-polyfill"
 import Koa from 'koa'
 import graphqlHttp from 'koa-graphql'
+//import { print } from 'graphql/language';
 
 import { schema } from './schema'
 
@@ -10,7 +11,12 @@ var app = new Koa()
 
 app.use(graphqlHttp({
   schema,
-  graphiql: true
+  graphiql: true,
+  /*extensions: ({ document, variables, operationName, result }) => {
+      console.log(print(document));
+      console.log(variables);
+      console.log(result);
+  },*/
 }))
 
 app.listen(PORT, () => {

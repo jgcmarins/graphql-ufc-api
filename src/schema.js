@@ -5,13 +5,20 @@ import {
   GraphQLInt,
   GraphQLList
 } from 'graphql'
+import {
+  globalIdField,
+} from 'graphql-relay';
 
 import fetch from 'node-fetch'
 
 const FighterType = new GraphQLObjectType({
   name: 'Fighter',
   fields: () => ({
-    id: { type: GraphQLInt },
+    id: globalIdField('Fighter'),
+    _id: {
+      type: GraphQLInt,
+      resolve: fighter => fighter.id
+    },
     profileImage: {
       type: GraphQLString,
       resolve: fighter => fighter.profile_image

@@ -1288,6 +1288,10 @@ graphql-language-service-utils@0.0.9:
     graphql "^0.9.6"
     graphql-language-service-types "0.0.15"
 
+graphql-relay@^0.5.2:
+  version "0.5.2"
+  resolved "https://registry.yarnpkg.com/graphql-relay/-/graphql-relay-0.5.2.tgz#40ff714efd60c2cd89e0bcc79e2afa6d87fa8673"
+
 graphql@^0.9.6:
   version "0.9.6"
   resolved "https://registry.yarnpkg.com/graphql/-/graphql-0.9.6.tgz#514421e9d225c29dfc8fd305459abae58815ef2c"
