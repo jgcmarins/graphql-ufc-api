@@ -6,6 +6,7 @@
     "react/jsx-filename-extension": "off",
     "no-restricted-syntax": "off",
     "no-plusplus": "off",
-    "quote-props": ["error", "consistent"]
+    "quote-props": ["error", "consistent"],
+    "semi": ["error", "never"]
   }
 }
