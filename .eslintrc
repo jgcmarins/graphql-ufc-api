@@ -1,0 +1,11 @@
+{
+  "extends": "airbnb",
+  "rules": {
+    "arrow-parens": "off",
+    "jsx-a11y/anchor-is-valid": "off",
+    "react/jsx-filename-extension": "off",
+    "no-restricted-syntax": "off",
+    "no-plusplus": "off",
+    "quote-props": ["error", "consistent"]
+  }
+}
