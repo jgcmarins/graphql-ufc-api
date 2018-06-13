@@ -2,7 +2,7 @@ import 'babel-polyfill'
 import Koa from 'koa'
 import graphqlHttp from 'koa-graphql'
 
-import schema from './schema'
+import { schema } from './graphql'
 
 const PORT = process.env.PORT || 5000
 
