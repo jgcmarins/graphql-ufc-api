@@ -8,5 +8,8 @@
     "no-plusplus": "off",
     "quote-props": ["error", "consistent"],
     "semi": ["error", "never"]
+  },
+  "env": {
+    "mocha": true
   }
 }
