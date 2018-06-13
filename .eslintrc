@@ -7,7 +7,8 @@
     "no-restricted-syntax": "off",
     "no-plusplus": "off",
     "quote-props": ["error", "consistent"],
-    "semi": ["error", "never"]
+    "semi": ["error", "never"],
+    "import/prefer-default-export": "off"
   },
   "env": {
     "mocha": true
