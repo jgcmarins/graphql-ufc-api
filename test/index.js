@@ -1,8 +1,7 @@
-import { expect } from 'chai';
-import app from '../src';
+import { expect } from 'chai'
 
 describe('sanity', () => {
   it('should exist', () => {
-    expect('it').be.equal(true);
-  });
-});
+    expect('it').be.equal(true)
+  })
+})

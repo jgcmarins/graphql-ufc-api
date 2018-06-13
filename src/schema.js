@@ -3,11 +3,12 @@ import {
   GraphQLObjectType,
   GraphQLString,
   GraphQLInt,
-  GraphQLList
+  GraphQLList,
 } from 'graphql'
+
 import {
   globalIdField,
-} from 'graphql-relay';
+} from 'graphql-relay'
 
 import fetch from 'node-fetch'
 
@@ -17,34 +18,34 @@ const FighterType = new GraphQLObjectType({
     id: globalIdField('Fighter'),
     _id: {
       type: GraphQLInt,
-      resolve: fighter => fighter.id
+      resolve: fighter => fighter.id,
     },
     profileImage: {
       type: GraphQLString,
-      resolve: fighter => fighter.profile_image
+      resolve: fighter => fighter.profile_image,
     },
     firstName: {
       type: GraphQLString,
-      resolve: fighter => fighter.first_name
+      resolve: fighter => fighter.first_name,
     },
     lastName: {
       type: GraphQLString,
-      resolve: fighter => fighter.last_name
+      resolve: fighter => fighter.last_name,
     },
     nickname: { type: GraphQLString },
     weightClass: {
       type: GraphQLString,
-      resolve: fighter => fighter.weight_class
+      resolve: fighter => fighter.weight_class,
     },
     wins: { type: GraphQLInt },
     losses: { type: GraphQLInt },
     draws: { type: GraphQLInt },
     beltThumbnail: {
       type: GraphQLString,
-      resolve: fighter => fighter.belt_thumbnail
+      resolve: fighter => fighter.belt_thumbnail,
     },
-    link: { type: GraphQLString }
-  })
+    link: { type: GraphQLString },
+  }),
 })
 
 const QueryType = new GraphQLObjectType({
@@ -53,14 +54,16 @@ const QueryType = new GraphQLObjectType({
     allFighters: {
       type: new GraphQLList(FighterType),
       resolve: async () => {
-    		const resp = await fetch('http://ufc-data-api.ufc.com/api/v3/iphone/fighters/');
-    		const data = await resp.json();
-    		return data;
-  	  }
-    }
-  })
+        const resp = await fetch('http://ufc-data-api.ufc.com/api/v3/iphone/fighters/')
+        const data = await resp.json()
+        return data
+      },
+    },
+  }),
 })
 
-export const schema = new GraphQLSchema({
-  query: QueryType
+const schema = new GraphQLSchema({
+  query: QueryType,
 })
+
+export default schema
