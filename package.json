@@ -29,6 +29,7 @@
     "graphql-relay": "^0.5.2",
     "koa": "^2.2.0",
     "koa-graphql": "^0.7.0",
+    "lodash": "^4.17.10",
     "node-fetch": "^1.7.0"
   },
   "optionalDependencies": {

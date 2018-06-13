@@ -1,45 +1,21 @@
-import {
-  GraphQLObjectType,
-  GraphQLString,
-  GraphQLInt,
-} from 'graphql'
+import { GraphQLString, GraphQLInt } from 'graphql'
+import _ from 'lodash/fp'
 
-import {
-  globalIdField,
-} from 'graphql-relay'
+import { GraphQLModelType } from '../core'
 
-const FighterType = new GraphQLObjectType({
+const FighterType = new GraphQLModelType({
   name: 'Fighter',
   fields: () => ({
-    id: globalIdField('Fighter'),
-    _id: {
-      type: GraphQLInt,
-      resolve: fighter => fighter.id,
-    },
-    profileImage: {
-      type: GraphQLString,
-      resolve: fighter => fighter.profile_image,
-    },
-    firstName: {
-      type: GraphQLString,
-      resolve: fighter => fighter.first_name,
-    },
-    lastName: {
-      type: GraphQLString,
-      resolve: fighter => fighter.last_name,
-    },
+    _id: { type: GraphQLInt, resolve: _.get('id') },
+    profileImage: { type: GraphQLString },
+    firstName: { type: GraphQLString },
+    lastName: { type: GraphQLString },
     nickname: { type: GraphQLString },
-    weightClass: {
-      type: GraphQLString,
-      resolve: fighter => fighter.weight_class,
-    },
+    weightClass: { type: GraphQLString },
     wins: { type: GraphQLInt },
     losses: { type: GraphQLInt },
     draws: { type: GraphQLInt },
-    beltThumbnail: {
-      type: GraphQLString,
-      resolve: fighter => fighter.belt_thumbnail,
-    },
+    beltThumbnail: { type: GraphQLString },
     link: { type: GraphQLString },
   }),
 })
