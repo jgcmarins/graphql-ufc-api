@@ -26,6 +26,7 @@
   "license": "MIT",
   "dependencies": {
     "babel-polyfill": "^6.23.0",
+    "dotenv": "^6.0.0",
     "graphiql": "^0.10.2",
     "graphql": "^0.9.6",
     "graphql-relay": "^0.5.2",
