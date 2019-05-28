@@ -1,0 +1,5 @@
+"""The root of all... queries"""
+type Query {
+  """This is a test field"""
+  test: String!
+}
