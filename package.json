@@ -32,8 +32,8 @@
     "node-fetch": "^2.6.0"
   },
   "optionalDependencies": {
-    "react": "^15.5.4",
-    "react-dom": "^15.5.4"
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0"
   },
   "devDependencies": {
     "babel-cli": "^6.9.0",
