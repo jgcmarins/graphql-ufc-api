@@ -32,7 +32,7 @@
     "node-fetch": "^2.6.0"
   },
   "optionalDependencies": {
-    "react": "^16.10.1",
+    "react": "^16.10.2",
     "react-dom": "^16.10.1"
   },
   "devDependencies": {
