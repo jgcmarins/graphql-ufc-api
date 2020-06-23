@@ -27,7 +27,7 @@
     "graphiql": "^0.10.2",
     "graphql": "^0.9.6",
     "graphql-relay": "^0.6.0",
-    "koa": "^2.12.1",
+    "koa": "^2.13.0",
     "koa-graphql": "^0.8.0",
     "node-fetch": "^2.6.0"
   },
