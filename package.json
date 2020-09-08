@@ -29,7 +29,7 @@
     "graphql-relay": "^0.6.0",
     "koa": "^2.13.0",
     "koa-graphql": "^0.8.0",
-    "node-fetch": "^2.6.0"
+    "node-fetch": "^2.6.1"
   },
   "optionalDependencies": {
     "react": "^16.13.1",
