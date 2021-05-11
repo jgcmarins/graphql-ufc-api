@@ -945,8 +945,8 @@ codemirror-graphql@^0.6.4:
     graphql-language-service-parser "^0.1.14"
 
 codemirror@^5.25.2:
-  version "5.32.0"
-  resolved "https://registry.yarnpkg.com/codemirror/-/codemirror-5.32.0.tgz#cb6ff5d8ef36d0b10f031130e2d9ebeee92c902e"
+  version "5.61.0"
+  resolved "https://registry.yarnpkg.com/codemirror/-/codemirror-5.61.0.tgz#318e5b034a707207948b92ffc2862195e8fdb08e"
 
 color-convert@^2.0.1:
   version "2.0.1"
